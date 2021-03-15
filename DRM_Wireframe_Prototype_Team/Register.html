@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="maxtabletsize">
+<head>	
+<title>About Wellness</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="AboutWellness.css" media="screen">
+<!--<link rel="stylesheet" type="text/css" href="Register.css" media="screen">-->
+
+</head>
+<body>
+<header>
+	<img src="images/AboutWellnessOhioLogoTrans.png" alt="About Wellness Logo">
+	<h1>About Wellness Ohio</h1>
+</header>
+	
+<main>
+<h2>Welcome to About Wellness Ohio Register - Personal Information</h2>
+<br>
+<div>
+			<form>
+				<label for="txtFirstName" class="userInfoColumn1">First Name:&nbsp&nbsp</label> <input type="text" id="txtFirstName" name="txtFirstName" class="userInfoColumn2"><br><br>
+				<label for="txtMI" class="userInfoColumn1">Middle Initial:&nbsp&nbsp</label> <span class="userInfoColumn2"><input type="text" id="txtMI" name="txtMI" maxlength="4" size="4"></span><br><br>
+				<label for="txtLastName" class="userInfoColumn1">Last Name:&nbsp&nbsp</label> <input type="text" id="txtLastName" name="txtLastName" class="userInfoColumn2"><br><br>
+				<label for="txtStreet" class="userInfoColumn1">Street Address:&nbsp&nbsp</label> <input type="text" id="txtStreet" name="txtStreet" class="userInfoColumn2"><br><br>
+				<label for="txtUnit" class="userInfoColumn1">Apt/Suite/Unit:&nbsp&nbsp</label> <input type="text" id="txtUnit" name="txtUnit" class="userInfoColumn2"><br><br>
+				<label for="txtCity" class="userInfoColumn1">City:&nbsp&nbsp</label> <input type="text" id="txtCity" name="txtCity" class="userInfoColumn2"><br><br>
+				<label for="selectState" class="userInfoColumn1">State:&nbsp&nbsp</label>
+				<select id="selectState">
+					<option value="Ohio">Ohio</option>
+					<option value="Texas">Texas</option>
+					<option value="California">California</option>
+				</select><br><br>
+				<label for="txtZipCode" class="userInfoColumn1">Zip Code:&nbsp&nbsp</label> <input type="text" id="txtZipCode" name="txtZipCode" class="userInfoColumn2"><br><br>
+				<label for="txtPhone" class="userInfoColumn1">Phone Number:&nbsp&nbsp</label> <input type="phone" id="txtPhone" name="txtPhone" class="userInfoColumn2"><br><br>
+				<label for="txtEmail" class="userInfoColumn1">Email:&nbsp&nbsp</label> <input type="email" id="txtEmail" name="txtEmail" class="userInfoColumn2"><br><br>
+				<label for="radioContact" class="userInfoColumn1">Best Contact:&nbsp&nbsp</label>
+				<div id="radioContact">
+					<label for="optionPhone" id="labelPhone">Phone</label>
+					<input type="radio" id="optionPhone" name="contact" value="Phone">
+					<label for="optionEmail" id="labelEmail">Email</label>
+					<input type="radio" id="optionEmail" name="contact" value="Email">
+				</div>
+				<br><br>
+			</form>
+</div>
+<br><br>
+<div>
+	<ul>
+		<li class="buttonli"></li>
+		<li class="buttonli"><button onclick="document.location = 'index.html'" class="clickherebutton">Home</button></li>
+		<!--<li class="buttonli"><button onclick="document.location = 'medicalCard.html'" class="clickherebutton">Next</button></li>-->
+		<li class="buttonli"><button onclick="register()" class="clickherebutton">Next</button></li>
+
+	</ul>
+
+</div>
+
+
+<div class="warningfoot">
+	For security reasons, at any time you return to the Home Menu your account will be logged out of this tablet.
+</div>
+<script>
+	function register() {
+		var fName = document.getElementById("txtFirstName").value;
+		var midInt = document.getElementById("txtMI").value;
+		var lName = document.getElementById("txtLastName").value;
+		var email = document.getElementById("txtEmail").value;
+		var city = document.getElementById("txtCity").value;
+		var state = document.getElementById("selectState").value;
+		
+		window.location = "medicalCard.html";
+		
+	}
+</script>
+</main>
+<footer>
+	<div>Copyright &copy; About Wellness </div>
+</footer>
+
+
+
+</body>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
